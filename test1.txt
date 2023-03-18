@@ -1,3 +1,5 @@
 All about Git and Github.
 
 Commands are as LINUX.
+
+How to get all commands of LINUX??
