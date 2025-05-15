@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>C++ Beginner Assignment Questions</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      color: #004080;
+    }
+    .question {
+      background: #fff;
+      border-left: 5px solid #004080;
+      padding: 15px;
+      margin: 20px 0;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      border-radius: 6px;
+    }
+    .question h2 {
+      margin-top: 0;
+    }
+    .toggle-btn {
+      background-color: #004080;
+      color: white;
+      padding: 8px 14px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    pre {
+      background: #272822;
+      color: #f8f8f2;
+      padding: 10px;
+      border-radius: 5px;
+      overflow-x: auto;
+      margin-top: 10px;
+    }
+    .code {
+      display: none;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>C++ Beginner Assignment Questions with Solutions</h1>
+
+  <!-- Question Template -->
+  <div class="question">
+    <h2>1. Hello World Program</h2>
+    <p>Write a C++ program to print "Hello, World!" on the screen.</p>
+    <button class="toggle-btn" onclick="toggleCode(this)">Show/Hide Solution</button>
+    <div class="code">
+      <pre><code>#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    cout &lt;&lt; "Hello, World!";
+    return 0;
+}</code></pre>
+    </div>
+  </div>
+
+  <div class="question">
+    <h2>2. Sum of Two Numbers</h2>
+    <p>Take two integers as input and print their sum.</p>
+    <button class="toggle-btn" onclick="toggleCode(this)">Show/Hide Solution</button>
+    <div class="code">
+      <pre><code>#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int a, b;
+    cout &lt;&lt; "Enter two numbers: ";
+    cin &gt;&gt; a &gt;&gt; b;
+    cout &lt;&lt; "Sum: " &lt;&lt; a + b;
+    return 0;
+}</code></pre>
+    </div>
+  </div>
+
+  <div class="question">
+    <h2>3. Even or Odd</h2>
+    <p>Write a program to check if a number is even or odd.</p>
+    <button class="toggle-btn" onclick="toggleCode(this)">Show/Hide Solution</button>
+    <div class="code">
+      <pre><code>#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int n;
+    cout &lt;&lt; "Enter a number: ";
+    cin &gt;&gt; n;
+    if (n % 2 == 0)
+        cout &lt;&lt; "Even";
+    else
+        cout &lt;&lt; "Odd";
+    return 0;
+}</code></pre>
+    </div>
+  </div>
+
+  <div class="question">
+    <h2>4. Largest of Three Numbers</h2>
+    <p>Find the largest among three numbers.</p>
+    <button class="toggle-btn" onclick="toggleCode(this)">Show/Hide Solution</button>
+    <div class="code">
+      <pre><code>#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int a, b, c;
+    cout &lt;&lt; "Enter 3 numbers: ";
+    cin &gt;&gt; a &gt;&gt; b &gt;&gt; c;
+    if (a &gt;= b &amp;&amp; a &gt;= c)
+        cout &lt;&lt; "Largest: " &lt;&lt; a;
+    else if (b &gt;= c)
+        cout &lt;&lt; "Largest: " &lt;&lt; b;
+    else
+        cout &lt;&lt; "Largest: " &lt;&lt; c;
+    return 0;
+}</code></pre>
+    </div>
+  </div>
+
+  <div class="question">
+    <h2>5. Factorial of a Number</h2>
+    <p>Calculate the factorial using a loop.</p>
+    <button class="toggle-btn" onclick="toggleCode(this)">Show/Hide Solution</button>
+    <div class="code">
+      <pre><code>#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int n;
+    long long fact = 1;
+    cout &lt;&lt; "Enter a number: ";
+    cin &gt;&gt; n;
+    for (int i = 1; i &lt;= n; i++) {
+        fact *= i;
+    }
+    cout &lt;&lt; "Factorial: " &lt;&lt; fact;
+    return 0;
+}</code></pre>
+    </div>
+  </div>
+
+  <div class="question">
+    <h2>6. Multiplication Table</h2>
+    <p>Print the multiplication table of a number.</p>
+    <button class="toggle-btn" onclick="toggleCode(this)">Show/Hide Solution</button>
+    <div class="code">
+      <pre><code>#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int n;
+    cout &lt;&lt; "Enter a number: ";
+    cin &gt;&gt; n;
+    for (int i = 1; i &lt;= 10; i++) {
+        cout &lt;&lt; n &lt;&lt; " x " &lt;&lt; i &lt;&lt; " = " &lt;&lt; n * i &lt;&lt; endl;
+    }
+    return 0;
+}</code></pre>
+    </div>
+  </div>
+
+  <div class="question">
+    <h2>7. Reverse a Number</h2>
+    <p>Reverse an integer number.</p>
+    <button class="toggle-btn" onclick="toggleCode(this)">Show/Hide Solution</button>
+    <div class="code">
+      <pre><code>#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int n, rev = 0;
+    cout &lt;&lt; "Enter a number: ";
+    cin &gt;&gt; n;
+    while (n != 0) {
+        rev = rev * 10 + (n % 10);
+        n /= 10;
+    }
+    cout &lt;&lt; "Reversed Number: " &lt;&lt; rev;
+    return 0;
+}</code></pre>
+    </div>
+  </div>
+
+  <div class="question">
+    <h2>8. Check Prime Number</h2>
+    <p>Check whether a number is prime.</p>
+    <button class="toggle-btn" onclick="toggleCode(this)">Show/Hide Solution</button>
+    <div class="code">
+      <pre><code>#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int n, i;
+    bool isPrime = true;
+    cout &lt;&lt; "Enter a number: ";
+    cin &gt;&gt; n;
+    if (n &lt;= 1) isPrime = false;
+    for (i = 2; i &lt;= n / 2; i++) {
+        if (n % i == 0) {
+            isPrime = false;
+            break;
+        }
+    }
+    if (isPrime)
+        cout &lt;&lt; "Prime";
+    else
+        cout &lt;&lt; "Not Prime";
+    return 0;
+}</code></pre>
+    </div>
+  </div>
+
+  <div class="question">
+    <h2>9. Array Sum</h2>
+    <p>Input 5 integers into an array and print their sum.</p>
+    <button class="toggle-btn" onclick="toggleCode(this)">Show/Hide Solution</button>
+    <div class="code">
+      <pre><code>#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int arr[5], sum = 0;
+    cout &lt;&lt; "Enter 5 numbers:\n";
+    for (int i = 0; i &lt; 5; i++) {
+        cin &gt;&gt; arr[i];
+        sum += arr[i];
+    }
+    cout &lt;&lt; "Sum: " &lt;&lt; sum;
+    return 0;
+}</code></pre>
+    </div>
+  </div>
+
+  <div class="question">
+    <h2>10. Function to Add Two Numbers</h2>
+    <p>Create a function to return the sum of two numbers.</p>
+    <button class="toggle-btn" onclick="toggleCode(this)">Show/Hide Solution</button>
+    <div class="code">
+      <pre><code>#include &lt;iostream&gt;
+using namespace std;
+
+int add(int a, int b) {
+    return a + b;
+}
+
+int main() {
+    int x, y;
+    cout &lt;&lt; "Enter two numbers: ";
+    cin &gt;&gt; x &gt;&gt; y;
+    cout &lt;&lt; "Sum: " &lt;&lt; add(x, y);
+    return 0;
+}</code></pre>
+    </div>
+  </div>
+
+  <div class="question">
+    <h2>11. Simple Class and Object</h2>
+    <p>Create a class to input and display student name and age.</p>
+    <button class="toggle-btn" onclick="toggleCode(this)">Show/Hide Solution</button>
+    <div class="code">
+      <pre><code>#include &lt;iostream&gt;
+using namespace std;
+
+class Student {
+public:
+    string name;
+    int age;
+
+    void input() {
+        cout &lt;&lt; "Enter name and age: ";
+        cin &gt;&gt; name &gt;&gt; age;
+    }
+
+    void display() {
+        cout &lt;&lt; "Name: " &lt;&lt; name &lt;&lt; ", Age: " &lt;&lt; age;
+    }
+};
+
+int main() {
+    Student s;
+    s.input();
+    s.display();
+    return 0;
+}</code></pre>
+    </div>
+  </div>
+
+  <div class="question">
+    <h2>12. File Handling: Write and Read File</h2>
+    <p>Write a string to a file and read it back.</p>
+    <button class="toggle-btn" onclick="toggleCode(this)">Show/Hide Solution</button>
+    <div class="code">
+      <pre><code>#include &lt;iostream&gt;
+#include &lt;fstream&gt;
+using namespace std;
+
+int main() {
+    ofstream outFile("example.txt");
+    outFile &lt;&lt; "C++ file handling example";
+    outFile.close();
+
+    ifstream inFile("example.txt");
+    string text;
+    getline(inFile, text);
+    cout &lt;&lt; "File content: " &lt;&lt; text;
+    inFile.close();
+    return 0;
+}</code></pre>
+    </div>
+  </div>
+
+  <!-- Toggle Script -->
+  <script>
+    function toggleCode(btn) {
+      const codeBlock = btn.nextElementSibling;
+      codeBlock.style.display = codeBlock.style.display === "block" ? "none" : "block";
+    }
+  </script>
+</body>
+</html>
