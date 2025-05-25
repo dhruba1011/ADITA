@@ -256,6 +256,18 @@ footer {
   }
 }
 
+table{
+  border-collapse: collapse;
+  padding: 10px;
+  font-size: 12px;
+  background-color: aquamarine;
+}
+th,td{
+  border: 1px solid #0c0a0a;
+  padding: 8px;
+  text-align: left;
+}
+
 @media (max-width: 480px) {
   body {
     font-size: 14px;

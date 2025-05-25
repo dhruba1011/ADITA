@@ -2,22 +2,19 @@
 Write a JavaScript function that returns the sum of two numbers.
 
 javascript
-Copy
-Edit
+ 
 function add(a, b) {
   return a + b;
 }
 Display an alert box that says "Welcome to JavaScript!"
 
 javascript
-Copy
-Edit
+ 
 alert("Welcome to JavaScript!");
 Write code to check if a number is even or odd.
 
 javascript
-Copy
-Edit
+ 
 var num = 7;
 if (num % 2 === 0) {
   console.log("Even");
@@ -27,23 +24,20 @@ if (num % 2 === 0) {
 Declare an array of fruits and display the first fruit.
 
 javascript
-Copy
-Edit
+ 
 var fruits = ["Apple", "Banana", "Cherry"];
 console.log(fruits[0]);
 Use a for loop to print numbers from 1 to 5.
 
 javascript
-Copy
-Edit
+ 
 for (var i = 1; i <= 5; i++) {
   console.log(i);
 }
 Create an object student with properties name and age.
 
 javascript
-Copy
-Edit
+ 
 var student = {
   name: "John",
   age: 18
@@ -52,16 +46,14 @@ console.log(student.name);
 Write a function that checks if a number is positive.
 
 javascript
-Copy
-Edit
+ 
 function isPositive(num) {
   return num > 0;
 }
 Create a simple click event for a button.
 
 html
-Copy
-Edit
+ 
 <button onclick="showMessage()">Click Me</button>
 <script>
   function showMessage() {
@@ -71,31 +63,29 @@ Edit
 Get the current date and print it.
 
 javascript
-Copy
-Edit
+ 
 var today = new Date();
 console.log(today.toDateString());
 Write a program to reverse a string.
 
 javascript
-Copy
-Edit
+ 
 function reverseString(str) {
   return str.split("").reverse().join("");
 }
 console.log(reverseString("hello"));
+
+
 ✅ VBScript Practical Questions (5)
 Write VBScript to display a message box.
 
 vbscript
-Copy
-Edit
+ 
 MsgBox "Hello from VBScript!"
 Declare two variables and show their sum in a message box.
 
 vbscript
-Copy
-Edit
+ 
 Dim a, b, result
 a = 10
 b = 5
@@ -104,8 +94,7 @@ MsgBox "Sum is: " & result
 Write VBScript to check if a number is greater than 100.
 
 vbscript
-Copy
-Edit
+ 
 Dim num
 num = 120
 If num > 100 Then
@@ -116,16 +105,14 @@ End If
 Create an input box to ask the user's name and display it.
 
 vbscript
-Copy
-Edit
+ 
 Dim name
 name = InputBox("Enter your name:")
 MsgBox "Hello, " & name
 Use a For loop to print numbers from 1 to 5.
 
 vbscript
-Copy
-Edit
+ 
 Dim i
 For i = 1 To 5
   MsgBox i
