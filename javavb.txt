@@ -1,5 +1,5 @@
 Dhruba - Add new questions 
-
+from office
 ✅ JavaScript Practical Questions (10)
 Write a JavaScript function that returns the sum of two numbers.
 
